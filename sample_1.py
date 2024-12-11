@@ -1,5 +1,6 @@
 
 '''
+https://leetcode.com/problems/check-if-number-has-equal-digit-count-and-digit-value/description/
 2283. Check if Number Has Equal Digit Count and Digit Value
 You are given a 0-indexed string num of length n consisting of digits.
 
@@ -26,12 +27,12 @@ num[2] = '0'. The digit 2 occurs zero times in num.
 The indices 0 and 1 both violate the condition, so return false.
 '''
 
-class Solution:
-    def digitCount(self, num: str) -> bool:
-        res = []
-        for i in range(len(num)):
-            res.append(num.count(str(i)) == int(num[i]))
 
-        if False in res:
-            return False
-        return True
+def digitCount(num):
+    res = []
+    for i in range(len(num)):
+        res.append(num.count(str(i)) == int(num[i]))
+
+    if False in res:
+        return False
+    return True
