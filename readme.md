@@ -4,3 +4,7 @@ I'm Kassidy, I have spent the last year and a half at CrabNebula, honing my soft
 Thank you for taking a look at my code sample and please do not hesitate to reach out if you have any questions for me. 
 
 You can find me at kbuslachjobs@gmail.com or on Linkedin: https://www.linkedin.com/in/kassidyjanae/
+
+In order to run the tests: 
+
+  $ python3 -m pytest
