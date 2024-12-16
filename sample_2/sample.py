@@ -2,7 +2,6 @@
 # Helper function that reads a two-column text file and returns two lists.
 
 def converts_columns_to_lists_helper(file_path):
-
     with open(file_path, 'r') as file:
         column1 = []
         column2 = []
@@ -35,9 +34,3 @@ def gen_similarity_score(list_1, list_2):
     for id in list_1:
         result += id * list_2.count(id)
     return result
-
-file = 'sample_2/data.txt'
-l1, l2 = converts_columns_to_lists_helper(file)
-
-compare_lists(l1, l2)
-gen_similarity_score(l1,l2)
